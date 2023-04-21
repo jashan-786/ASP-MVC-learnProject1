@@ -1,0 +1,27 @@
+﻿@model List<FirstMVCApp.Models.DogViewModel>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+
+}
+<h1> Hello world bro !  </h1>
+<p>This is the index page of hello world controller</p>
+<ul>
+    @foreach (var dog in Model)
+    {
+        <li> A dog named @dog.Name say hello  </li>
+        <li>@dog.Name is @dog.Age years old </li>
+
+
+    }
+
+
+
+</ul>
+
+/*  at the rate model tyepe of object our view expects in our class  to acces the data we use model property is objecct of  s,ae type that specifies the top of page and it
+is c # property so use at the rate
+*/ 
